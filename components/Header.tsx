@@ -5,13 +5,14 @@ import { FaUsers } from "react-icons/fa";
 import { IoMdNotifications } from "react-icons/io";
 import { RiMessengerFill } from "react-icons/ri";
 import { AiOutlinePlus } from "react-icons/ai";
+import Image from "next/image";
 
 const Header = () => {
 	return (
 		<div className="bg-[#272727] border-b border-white/10 flex justify-between items-center px-4 fixed w-full z-10">
 			<div className="flex gap-2 items-center">
 				<div className="w-12 h-full">
-					<img src="/favicon.svg" alt="Logo Facebook" />
+					<Image width={100} height={100} priority src="/favicon.svg" alt="Logo Facebook" />
 				</div>
 				<div className="bg-[#424242] text-white/60 text-lg w-11 h-11 rounded-full flex items-center justify-center duration-150 cursor-pointer hover:bg-[#4e4e4e]">
 					<FiSearch />
@@ -42,7 +43,10 @@ const Header = () => {
 					<IoMdNotifications />
 				</div>
 				<div className="w-11 h-11 rounded-full flex items-center justify-center cursor-pointer">
-					<img
+					<Image
+						width={300}
+						height={300}
+						priority
 						className="w-full h-full object-cover rounded-full"
 						src="/profile.jpg"
 						alt="Profile"
