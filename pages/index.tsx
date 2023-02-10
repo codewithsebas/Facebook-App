@@ -27,6 +27,7 @@ export default function Home() {
 							<Image
 								width={100}
 								height={100}
+                priority
 								src="/favicon.svg"
 								alt="Logo Facebook"
 							/>
@@ -170,8 +171,9 @@ export default function Home() {
 				</div>
 				<div className="w-full h-full bg-blue-500 md:flex hidden">
 					<Image
-			
-            fill
+						width={3000}
+						height={3000}
+						priority
 						className="w-full h-full object-cover"
 						src="https://res.cloudinary.com/dovavvnjx/image/upload/v1675722632/pexels-greenwish-10544133_nihbvr.jpg"
 						alt="Facebook"
