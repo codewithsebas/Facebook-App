@@ -9,16 +9,16 @@ import Image from "next/image";
 
 const Header = () => {
 	return (
-		<div className="bg-[#272727] border-b border-white/10 flex justify-between items-center px-4 fixed w-full z-10">
+		<div className="bg-[#272727] border-b border-white/10 flex justify-between items-center px-4 fixed w-full z-10 py-2 lg:py-0">
 			<div className="flex gap-2 items-center">
 				<div className="w-12 h-full">
 					<Image width={100} height={100} priority src="/favicon.svg" alt="Logo Facebook" />
 				</div>
-				<div className="bg-[#424242] text-white/60 text-lg w-11 h-11 rounded-full flex items-center justify-center duration-150 cursor-pointer hover:bg-[#4e4e4e]">
+				<div className="hidden md:flex bg-[#424242] text-white/60 text-lg w-11 h-11 rounded-full items-center justify-center duration-150 cursor-pointer hover:bg-[#4e4e4e]">
 					<FiSearch />
 				</div>
 			</div>
-			<div className="h-full flex items-center gap-3">
+			<div className="h-full hidden items-center gap-3 md:flex ">
 				<div className="text-blue-500 w-full h-full border-b-2 border-blue-500 text-3xl px-8 py-3 cursor-pointer duration-150">
 					<HiHome />
 				</div>

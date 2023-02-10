@@ -32,7 +32,7 @@ export default function Profile() {
 			<Header />
 			<div className="w-full h-[46.9rem] lg:h-[39.4rem] flex justify-center items-center bg-[#242424]">
 				<div className="bg-[#1c1c1d] h-full w-full max-w-[60rem]">
-					<div className="w-full h-[25.3rem] rounded-b-lg bg-gradient-to-t from-black/50 to-transparent flex items-end justify-end pr-10 pb-5">
+					<div className="w-full sm:h-[25.3rem] h-[20rem] rounded-b-lg bg-gradient-to-t from-black/50 to-transparent flex items-end justify-end pr-5 pb-5 lg:pr-10 lg:pb-5">
 						<div className="flex items-center gap-2 bg-white py-2 px-3 rounded-md text-xl duration-150 cursor-pointer hover:bg-white/90">
 							<HiCamera />
 							<h2 className="font-medium text-base lg:flex hidden">
@@ -279,12 +279,12 @@ export default function Profile() {
 									<h1 className="text-white text-xl font-semibold">
 										Publicaciones
 									</h1>
-									<div className="flex gap-3">
-										<button className="flex items-center gap-1 text-white bg-white/10 rounded-md py-1 px-3 text-base duration-150 hover:bg-white/20">
+									<div className="flex-row md:flex gap-3">
+										<button className="mt-2 md:mt-0 flex items-center gap-1 text-white bg-white/10 rounded-md py-1 px-3 text-base duration-150 hover:bg-white/20">
 											<RiListSettingsFill />
 											<p>Filtros</p>
 										</button>
-										<button className="flex items-center gap-1 text-white bg-white/10 rounded-md py-1 px-3 text-base duration-150 hover:bg-white/20">
+										<button className="mt-2 md:mt-0 flex items-center gap-1 text-white bg-white/10 rounded-md py-1 px-3 text-base duration-150 hover:bg-white/20">
 											<IoMdSettings />
 											<p>Administrar publicaciones</p>
 										</button>
@@ -361,25 +361,23 @@ export default function Profile() {
 									<p className="text-white px-4 pb-3">2004</p>
 								</div>
 								<div className="flex justify-between gap-1">
-									<button className="w-full flex items-center justify-center gap-1 px-5 py-1 rounded-md duration-150 hover:bg-white/10 text-white/60">
-										
-											<AiOutlineLike className="text-lg md:text-2xl" />
-											<h1 className="text-[0.8rem] font-medium md:text-base">
-												Me gusta
-											</h1>
-										
+									<button className="w-full flex items-center justify-center gap-1 py-1 rounded-md duration-150 hover:bg-white/10 text-white/60">
+										<AiOutlineLike className="text-[1rem] md:text-2xl" />
+										<h1 className="text-[0.7rem] font-medium md:text-base">
+											Me gusta
+										</h1>
 									</button>
 
-									<button className="w-full flex items-center justify-center gap-1 px-5 py-1 rounded-md duration-150 hover:bg-white/10 text-white/60">
-										<BiComment className="text-lg md:text-2xl" />
-										<h1 className="text-[0.8rem] font-medium md:text-base">
+									<button className="w-full flex items-center justify-center gap-1 py-1 rounded-md duration-150 hover:bg-white/10 text-white/60">
+										<BiComment className="text-[1rem] md:text-2xl" />
+										<h1 className="text-[0.7rem] font-medium md:text-base">
 											Comentar
 										</h1>
 									</button>
 
-									<button className="w-full flex items-center justify-center gap-1 px-5 py-1 rounded-md duration-150 hover:bg-white/10 text-white/60">
-										<RiShareForwardLine className="text-lg md:text-2xl" />
-										<h1 className="text-[0.8rem] font-medium md:text-base">
+									<button className="w-full flex items-center justify-center gap-1 py-1 rounded-md duration-150 hover:bg-white/10 text-white/60">
+										<RiShareForwardLine className="text-[1rem] md:text-2xl" />
+										<h1 className="text-[0.7rem] font-medium md:text-base">
 											Compartir
 										</h1>
 									</button>
