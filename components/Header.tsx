@@ -48,7 +48,7 @@ const Header = () => {
 						height={300}
 						priority
 						className="w-full h-full object-cover rounded-full"
-						src="/profile.jpg"
+						src="/profile.jpeg"
 						alt="Profile"
 					/>
 				</div>
